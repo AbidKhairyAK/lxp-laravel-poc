@@ -10,7 +10,7 @@
     </div>
     <nav class="pt-3 text-base font-semibold text-white">
 
-        @foreach (getMenuItems() as $menu)
+        @foreach (config('layout.menu_items') as $menu)
             <a
                 href="/{{ $menu->url }}"
                 class="flex items-center text-white py-4 pl-6 nav-item

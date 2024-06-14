@@ -12,7 +12,7 @@
     <!-- Dropdown Nav -->
     <nav :class="isOpen ? 'flex' : 'hidden'" class="flex flex-col pt-4">
 
-        @foreach (getMenuItems() as $menu)
+        @foreach (config('layout.menu_items') as $menu)
             <a
                 href="/{{ $menu->url }}"
                 class="flex items-center text-white py-2 pl-4 nav-item
